@@ -21,40 +21,47 @@
     <div class="container">
       <h2 class="h4 mt-5 text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
       <div class="card">
-        <form>
-          <div class="row p-4">
-            <div class="col-4 d-flex flex-column">
-              <label for="full-name">Nome Cognome</label>
-              <input
-                type="text"
-                name="full-name"
-                id="full-name"
-                value="Emanuele Zuppardo"
-                required
-              />
-            </div>
-            <div class="col-4 d-flex flex-column">
-              <label for="km">Km da percorrere</label>
-              <input type="number" name="km" id="km" value="20" required />
-            </div>
-            <div class="col-4 d-flex justify-content-center pt-4">
-              <select class="age-select">
-                <option>Minorenne</option>
-                <option>Maggiorenne</option>
-                <option>Over 65</option>
-              </select>
-            </div>
-            <div class="col-6 d-flex justify-content-end mt-4">
-              <button class="btn btn-secondary" id="calc-button">Genera</button>
-            </div>
-            <div class="col-6 d-flex justify-content-start mt-4">
-              <button class="btn btn-secondary" id="delete-button">
-                Annulla
-              </button>
-            </div>
+        <div class="row p-4">
+          <div class="col-4 d-flex flex-column">
+            <label for="full-name">Nome Cognome</label>
+            <input
+              type="text"
+              name="full-name"
+              id="full-name"
+              class="form-control"
+              value="Emanuele Zuppardo"
+              required
+            />
           </div>
-        </form>
+          <div class="col-4 d-flex flex-column">
+            <label for="km">Km da percorrere</label>
+            <input
+              type="number"
+              name="km"
+              id="km"
+              value="20"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-4 d-flex justify-content-center pt-4">
+            <select class="form-select" id="age-select">
+              <option>Minorenne</option>
+              <option>Maggiorenne</option>
+              <option>Over 65</option>
+            </select>
+          </div>
+          <div class="col-6 d-flex justify-content-end mt-4">
+            <button class="btn btn-secondary" id="calc-button">Genera</button>
+          </div>
+          <div class="col-6 d-flex justify-content-start mt-4">
+            <button class="btn btn-secondary" id="delete-button">
+              Annulla
+            </button>
+          </div>
+        </div>
       </div>
+      <div id="result-container"></div>
       <!-- <h2 class="h4 text-center mt-5">IL TUO BIGLIETTO</h2>
       <div class="card p-4">
         <div class="row">
