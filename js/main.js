@@ -28,30 +28,29 @@ ticketForm.addEventListener("submit", (event) => {
   ticketPrice = ticketPrice.toFixed(2);
 
   const ticketCard = `
-  <h2 class="h4 text-center mt-5">IL TUO BIGLIETTO</h2>
-  <div class="card p-4">
+  <div class="card rounded-0 border-2 border-end-0 border-start-0 ps-2 mb-1">
   <div class="row">
-  <div class="col-3 d-flex flex-column">
+  <div class="col-3 d-flex flex-column bg-secondary py-3">
   <h6>NOME PASSEGGERO</h6>
   <p>${fullname}</p>
   </div>
-  <div class="col-2 d-flex flex-column">
+  <div class="col-2 d-flex flex-column py-3 justify-content-between">
   <h6>Offerta</h6>
   <p>Biglietto Standard</p>
   </div>
-  <div class="col-2 d-flex flex-column">
+  <div class="col-2 d-flex flex-column py-3 justify-content-between">
   <h6>Carrozza</h6>
   <p>5</p>
   </div>
-  <div class="col-2 d-flex flex-column">
+  <div class="col-2 d-flex flex-column py-3 justify-content-between">
   <h6>Codice CP</h6>
   <p>92911</p>
   </div>
-  <div class="col-3 d-flex flex-column">
+  <div class="col-3 d-flex flex-column py-3 justify-content-between">
   <h6>Costo biglietto</h6>
   <p>${ticketPrice}€</p>
   </div>
   </div>
   </div>`;
-  resultContainer.innerHTML = ticketCard;
+  resultContainer.innerHTML += ticketCard;
 });
