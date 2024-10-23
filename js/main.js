@@ -28,7 +28,7 @@ ticketForm.addEventListener("submit", (event) => {
   ticketPrice = ticketPrice.toFixed(2);
 
   const ticketCard = `
-  <div class="card rounded-0 border-2 border-end-0 border-start-0 ps-2 mb-1">
+  <div class="card rounded-0 border-2 border-end-0 border-start-0 ps-2 mb-3">
   <div class="row">
   <div class="col-3 d-flex flex-column bg-secondary py-3">
   <h6>NOME PASSEGGERO</h6>

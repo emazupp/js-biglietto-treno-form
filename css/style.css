@@ -1,3 +1,17 @@
 body {
   background-color: #b81450 !important;
 }
+
+.card div label {
+  color: #b81450 !important;
+}
+
+.card button {
+  font-weight: 700;
+  color: #b81450 !important;
+  background-color: #ddd !important;
+  border: 1px solid transparent;
+}
+.card button:hover {
+  border: 1px solid #e9af0e;
+}
