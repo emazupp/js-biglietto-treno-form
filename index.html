@@ -7,11 +7,44 @@
     <meta name="description" content="" />
     <meta name="keyword" content="" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Calcolo biglietto treno</title>
   </head>
 
   <body>
+    <div class="container">
+      <div class="card">
+        <div class="row">
+          <div class="col-4">
+            <label for="full-name">Nome Cognome</label>
+            <input type="text" name="full-name" id="full-name" />
+          </div>
+          <div class="col-4">
+            <label for="km">Km da percorrere</label>
+            <input type="text" name="km" id="km" />
+          </div>
+          <div class="col-4 d-flex justify-content-center">
+            <select class="age-select">
+              <option>Minorenne</option>
+              <option>Maggiorenne</option>
+              <option>Over 65</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
