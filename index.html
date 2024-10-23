@@ -19,22 +19,63 @@
 
   <body>
     <div class="container">
+      <div class="card mt-5">
+        <form>
+          <div class="row p-4">
+            <div class="col-4 d-flex flex-column">
+              <label for="full-name">Nome Cognome</label>
+              <input
+                type="text"
+                name="full-name"
+                id="full-name"
+                value="Emanuele Zuppardo"
+                required
+              />
+            </div>
+            <div class="col-4 d-flex flex-column">
+              <label for="km">Km da percorrere</label>
+              <input type="number" name="km" id="km" value="20" required />
+            </div>
+            <div class="col-4 d-flex justify-content-center pt-4">
+              <select class="age-select">
+                <option>Minorenne</option>
+                <option>Maggiorenne</option>
+                <option>Over 65</option>
+              </select>
+            </div>
+            <div class="col-6 d-flex justify-content-end mt-4">
+              <button class="btn btn-secondary" id="calc-button">Genera</button>
+            </div>
+            <div class="col-6 d-flex justify-content-start mt-4">
+              <button class="btn btn-secondary" id="delete-button">
+                Annulla
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <h2 class="h4 d-flex justify-content-center">IL TUO BIGLIETTO</h2>
       <div class="card">
         <div class="row">
-          <div class="col-4">
-            <label for="full-name">Nome Cognome</label>
-            <input type="text" name="full-name" id="full-name" />
+          <div class="col-3 d-flex flex-column">
+            <h6>NOME PASSEGGERO</h6>
+            <p>Emanuele Zuppardo</p>
           </div>
-          <div class="col-4">
-            <label for="km">Km da percorrere</label>
-            <input type="text" name="km" id="km" />
+          <div class="col-2 d-flex flex-column">
+            <h6>Offerta</h6>
+            <p>Biglietto Standard</p>
           </div>
-          <div class="col-4 d-flex justify-content-center">
-            <select class="age-select">
-              <option>Minorenne</option>
-              <option>Maggiorenne</option>
-              <option>Over 65</option>
-            </select>
+          <div class="col-2 d-flex flex-column">
+            <h6>Carrozza</h6>
+            <p>5</p>
+          </div>
+          <div class="col-2 d-flex flex-column">
+            <h6>Codice CP</h6>
+            <p>92911</p>
+          </div>
+          <div class="col-3 d-flex flex-column">
+            <h6>Costo biglietto</h6>
+            <p>prezzo</p>
           </div>
         </div>
       </div>
