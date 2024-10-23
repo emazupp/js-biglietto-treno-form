@@ -1,10 +1,18 @@
 const fullnameInput = document.getElementById("full-name");
 const kmInput = document.getElementById("km");
-const calcButton = document.getElementById("calc-button");
+const ticketForm = document.getElementById("ticket-form");
 const ageInput = document.getElementById("age-select");
 const resultContainer = document.getElementById("result-container");
+const deleteButton = document.getElementById("delete-button");
 
-calcButton.addEventListener("click", () => {
+deleteButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  fullnameInput.value = "";
+  kmInput.value = "";
+});
+
+ticketForm.addEventListener("submit", (event) => {
+  event.preventDefault();
   const fullname = fullnameInput.value;
   const km = kmInput.value;
   let ticketPrice = km * 0.21;
